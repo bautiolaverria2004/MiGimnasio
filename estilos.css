@@ -1,0 +1,284 @@
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 24px;
+}
+
+h3 {
+    color: #334155;
+    font-size: 19px;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* =====================================
+   CONTENEDOR PRINCIPAL
+===================================== */
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================
+   BOTONES GENERALES
+===================================== */
+
+button {
+    padding: 12px 18px;
+    margin: 8px 4px 8px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* =====================================
+   LISTA DE RUTINAS
+===================================== */
+
+#listaRutinas {
+    margin-top: 20px;
+}
+
+.botonRutina {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 17px;
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+
+.botonRutina:hover {
+    background-color: #1d4ed8;
+}
+
+/* =====================================
+   PANTALLA DE EJERCICIOS
+===================================== */
+
+#pantallaRutina {
+    margin-top: 20px;
+}
+
+#listaEjercicios {
+    margin-top: 15px;
+}
+
+#listaEjercicios p {
+    background-color: #f4f6f8;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: left;
+    color: #222;
+}
+
+/* =====================================
+   PANTALLA DE SERIES
+===================================== */
+
+#pantallaSeries {
+    margin-top: 20px;
+}
+
+#listaSeries {
+    margin-top: 20px;
+}
+
+#listaSeries > div {
+    background-color: #f8fafc;
+    padding: 16px !important;
+    margin-bottom: 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+#listaSeries strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+/* =====================================
+   CONTROLES DE PESO Y REPETICIONES
+===================================== */
+
+#listaSeries label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 85px !important;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+}
+
+input[type="number"]:focus {
+    outline: 2px solid #2563eb;
+    border-color: #2563eb;
+}
+
+/* Botones para aumentar o disminuir */
+
+#listaSeries button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 18px;
+}
+
+/* =====================================
+   SELECTOR DE SALTO DE PESO
+===================================== */
+
+#saltoPeso {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    color: #222;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* =====================================
+   GUARDAR ENTRENAMIENTO
+===================================== */
+
+#guardarEntrenamiento {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #16a34a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#guardarEntrenamiento:hover {
+    background-color: #15803d;
+}
+
+#agregarSerie {
+    margin-top: 12px;
+}
+
+/* =====================================
+   HISTORIAL DE ENTRENAMIENTOS
+===================================== */
+
+#historialEntrenamientos {
+    margin-top: 15px;
+}
+
+#historialEntrenamientos p {
+    background-color: #f1f5f9;
+    padding: 14px;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    color: #334155;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* =====================================
+   OCULTAR PANTALLAS INACTIVAS
+===================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+/* =====================================
+   ADAPTACIÓN PARA CELULARES
+===================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    #listaSeries > div {
+        padding: 12px !important;
+    }
+
+    #listaSeries label {
+        flex-wrap: wrap;
+    }
+
+    input[type="number"] {
+        width: 75px !important;
+    }
+}

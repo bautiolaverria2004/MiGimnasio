@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MiGimnasio</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>MiGimnasio</h1>
+
+    <p>Registrá tus entrenamientos y tu progreso.</p>
+
+    <main>
+
+        <!-- PANTALLA DE RUTINAS -->
+
+        <button id="agregarRutina">
+            + Agregar rutina
+        </button>
+
+        <div id="listaRutinas"></div>
+
+
+        <!-- PANTALLA DE EJERCICIOS -->
+
+        <section id="pantallaRutina" hidden>
+
+            <button id="volverRutinas">
+                ← Volver a rutinas
+            </button>
+
+            <h2 id="nombreRutina"></h2>
+
+            <button id="agregarEjercicio">
+                + Agregar ejercicio
+            </button>
+
+            <div id="listaEjercicios"></div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
